@@ -1,14 +1,11 @@
-'use strict';
-
-var appendType = require('append-type');
-var arrIndexesOf = require('arr-indexes-of');
-
 /*!
  * index-of-sequence | MIT (c) Shinnosuke Watanabe
  * https://github.com/shinnn/index-of-sequence
 */
+import appendType from 'append-type';
+import arrIndexesOf from 'arr-indexes-of';
 
-module.exports = function indexOfSequence(arr, searchValues, fromIndex) {
+export default function indexOfSequence(arr, searchValues, fromIndex) {
 	[arr, searchValues].forEach(function(arg) {
 		if (!Array.isArray(arg)) {
 			throw new TypeError('Expected an array, but got ' + appendType(arg) + '.');

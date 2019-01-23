@@ -1,7 +1,7 @@
 # index-of-sequence
 
 [![npm version](https://img.shields.io/npm/v/index-of-sequence.svg)](https://www.npmjs.com/package/index-of-sequence)
-[![Build Status](https://travis-ci.org/shinnn/index-of-sequence.svg?branch=master)](https://travis-ci.org/shinnn/index-of-sequence)
+[![Build Status](https://travis-ci.com/shinnn/index-of-sequence.svg?branch=master)](https://travis-ci.com/shinnn/index-of-sequence)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/index-of-sequence.svg)](https://coveralls.io/github/shinnn/index-of-sequence)
 
 Find the first index at which a given sequence of elements can be found in the array
@@ -14,7 +14,7 @@ indexOfSequence(['a', 'b', 'a', 'b', 'c', 'a', 'b', 'c'], ['a', 'b', 'c']); //=>
 
 ## Installation
 
-[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/getting-started/what-is-npm).
+[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/about-npm/).
 
 ```
 npm install index-of-sequence
@@ -50,6 +50,6 @@ indexOfSequence([1, 2, 3], []); //=> -1
 
 ## License
 
-Copyright (c) 2016 - 2018 [Shinnosuke Watanabe](https://github.com/shinnn)
+Copyright (c) 2016 - 2019 [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT License](./LICENSE).

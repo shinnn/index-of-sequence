@@ -1,45 +1,48 @@
 {
-  "name": "index-of-sequence",
-  "version": "1.0.0",
-  "description": "Find the first index at which a given sequence of elements can be found in the array",
-  "repository": "shinnn/index-of-sequence",
-  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
-  "scripts": {
-    "prebuild": "eslint --fix --format=codeframe module.js test.js",
-    "build": "rollup --config=node:module",
-    "pretest": "npm run-script build",
-    "test": "istanbul cover test.js"
-  },
-  "license": "MIT",
-  "module": "module.js",
-  "files": [
-    "index.js",
-    "module.js"
-  ],
-  "keywords": [
-    "array",
-    "1st",
-    "first",
-    "index",
-    "search",
-    "find",
-    "sequence",
-    "series",
-    "elements"
-  ],
-  "dependencies": {
-    "append-type": "^1.0.0",
-    "arr-indexes-of": "^1.0.1"
-  },
-  "devDependencies": {
-    "@shinnn/eslint-config": "^3.3.2",
-    "eslint": "^3.9.1",
-    "istanbul": "^0.4.5",
-    "rollup": "^0.36.3",
-    "rollup-config-module": "^1.0.0",
-    "tape": "^4.6.2"
-  },
-  "eslintConfig": {
-    "extends": "@shinnn"
-  }
+	"name": "index-of-sequence",
+	"version": "1.0.0",
+	"description": "Find the first index at which a given sequence of elements can be found in the array",
+	"repository": "shinnn/index-of-sequence",
+	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"license": "MIT",
+	"scripts": {
+		"prebuild": "eslint .",
+		"build": "rollup --config=node:module",
+		"pretest": "npm run-script build",
+		"test": "nyc node test.js"
+	},
+	"files": [
+		"index.js",
+		"index.mjs"
+	],
+	"keywords": [
+		"array",
+		"1st",
+		"first",
+		"index",
+		"search",
+		"find",
+		"sequence",
+		"series",
+		"elements"
+	],
+	"dependencies": {
+		"append-type": "^1.0.2",
+		"arr-indexes-of": "^2.0.0"
+	},
+	"devDependencies": {
+		"@shinnn/eslint-config": "^6.8.9",
+		"eslint": "^5.12.1",
+		"nyc": "^13.1.0",
+		"nyc-config-common": "^1.0.1",
+		"rollup": "^1.1.2",
+		"rollup-config-module": "^2.0.2",
+		"tape": "^4.9.2"
+	},
+	"eslintConfig": {
+		"extends": "@shinnn"
+	},
+	"nyc": {
+		"extends": "nyc-config-common"
+	}
 }
