@@ -3,4 +3,5 @@ branches:
   except: /^v\d/
 language: node_js
 node_js: node
+cache: npm
 after_script: npm install istanbul-coveralls && node node_modules/.bin/istanbul-coveralls
